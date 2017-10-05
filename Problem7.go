@@ -1,5 +1,5 @@
 // Niall Devery
-// Adpated from: https://play.golang.org/p/5FUOzjBa-o
+// Adapted from: https://play.golang.org/p/5FUOzjBa-o
 
 package main
 
