@@ -5,5 +5,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("こんにちは世界")// hello world written in japanese
+	fmt.Println("hello world, こんにちは世界")// hello world written in japanese
 }

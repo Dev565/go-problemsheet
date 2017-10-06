@@ -1,25 +1,19 @@
-// Niall Devery
-// https://www.rosettacode.org/wiki/Guess_the_number#Go
+// Niall Devery 
+// Adapted from: 
 package main
- 
-import (
-    "fmt"
-    "math/rand"
-    "time"
-)
- 
+
+import "fmt"
+
+func factorial(x uint) uint {
+	if x == 0 {
+		return 1
+	}
+	
+	return x * factorial(x-1)
+}
+
 func main() {
-    fmt.Print("Guess number from 1 to 10: ")
-    rand.Seed(time.Now().Unix())
-    n := rand.Intn(10) + 1
-    for guess := n; ; fmt.Print("No. Try again: ") {
-        switch _, err := fmt.Scan(&guess); {
-        case err != nil:
-            fmt.Println("\n", err, "\nSo, bye.")
-            return
-        case guess == n:
-            fmt.Println("Well guessed!")
-            return
-        }
-    }
+	x := uint(5)
+	calcFactorial := factorial(x)
+	fmt.Println(calcFactorial)
 }

@@ -7,7 +7,7 @@ import "fmt"
 func main() { 
 		fmt.Println("String: The quick brown 狐 (fox) jumped over the lazy 犬(dog)")
         input := "The quick brown 狐(fox) jumped over the lazy 犬(dog)" 
-        // Get Unicode code points. 
+        // Using unicode
         n := 0
         rune := make([]rune, len(input))
         for _, r := range input { 
