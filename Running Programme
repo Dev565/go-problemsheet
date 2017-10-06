@@ -1,0 +1,4 @@
+Using go
+
+I created my files using notepad++ and running through the command console using Cmder, using commands "go build fileName.go" to compile them
+then "go run fileName.Go"
